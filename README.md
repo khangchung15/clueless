@@ -26,12 +26,20 @@ npm install
 ollama serve
 ```
 
-4. Start the development server:
+4. Start the backend server:
 ```bash
+cd clueless-backend
+npm install
+node server.mjs
+```
+
+5. In a new terminal, start the frontend server:
+```bash
+cd clueless
 npm run dev
 ```
 
-5. Open http://localhost:5173 in your browser
+6. Open http://localhost:5173 in your browser
 
 ## How to Play
 
@@ -43,13 +51,13 @@ npm run dev
 
 ## Development
 
-- Frontend: React + TypeScript + Vite
+- Frontend: Svelte + TypeScript + Vite
 - Backend: Node.js + Express
 - AI: Ollama with Mistral model
 
 ## Note
 
-This game requires Ollama to be running locally on your machine. The backend connects to `http://localhost:11434` to communicate with Ollama.
+This game requires Ollama to be running locally on your machine. The backend connects to `http://localhost:11434` to communicate with Ollama. There is no public or cloud deployment; everything runs on your computer.
 
 ## License
 
