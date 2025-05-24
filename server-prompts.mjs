@@ -5,13 +5,14 @@ export const prompts = {
       : '';
     
     return `You are a word generator for a word guessing game. Generate a single word that meets these criteria:
-1. Must be a noun (not a verb, adjective, or other part of speech)
+1. Must be a noun or verb
 2. Must be between 4-12 letters long
 3. Must be a common word that most people would know
 4. Must be something that can be described with creative clues
 5. Must be a single word (not a phrase or multiple words)
-6. Must not be a proper noun (no names, places, etc.)
+6. No names, places, etc.
 7. Must not be a technical term or jargon
+8. Must use singular, not plural
 ${guessedWordsList}
 
 IMPORTANT:
@@ -50,7 +51,8 @@ Instructions:
 1. Think carefully about all the clues provided
 2. Make a specific guess at the word
 3. Explain your reasoning clearly
-4. Format your response EXACTLY like this:
+4. Must be singular, not plural
+5. Format your response EXACTLY like this:
 Guess: [your guess]
 Reasoning: [your reasoning for the guess]
 

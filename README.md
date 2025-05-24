@@ -26,20 +26,35 @@ npm install
 ollama serve
 ```
 
-4. Start the backend server:
+4. Make sure the Mistral model is available:
+```bash
+ollama pull mistral
+```
+
+## Running the App (Both Servers)
+
+You need to run both the backend and frontend servers at the same time:
+
+### 1. Start the backend server
+Open a terminal and run:
 ```bash
 cd clueless-backend
 npm install
 node server.mjs
 ```
+This will start your backend on http://localhost:3000
 
-5. In a new terminal, start the frontend server:
+### 2. Start the frontend server
+Open a **new terminal window/tab** and run:
 ```bash
 cd clueless
+npm install
 npm run dev
 ```
+This will start the frontend on http://localhost:5173
 
-6. Open http://localhost:5173 in your browser
+### 3. Open the app
+Go to [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## How to Play
 
@@ -59,16 +74,12 @@ npm run dev
 
 This game requires Ollama to be running locally on your machine. The backend connects to `http://localhost:11434` to communicate with Ollama. There is no public or cloud deployment; everything runs on your computer.
 
-## License
+## Quick Start
 
-MIT
+If you want to start both the backend and frontend servers in one command, you can use:
 
-## Local Development
-
-1. Install dependencies:
 ```bash
-npm install
+npm run dev:all
 ```
 
-2. Start both servers:
-```
+This will start both servers concurrently. Make sure Ollama is running first!
