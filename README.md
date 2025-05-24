@@ -1,6 +1,6 @@
 # Clueless
 
-A word guessing game where you give clues to an AI and try to make it guess your word.
+Help an AI guess a word given by another AI
 
 ## Prerequisites
 
@@ -58,11 +58,12 @@ Go to [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## How to Play
 
-1. The game will generate a random word for you
+1. The AI will generate a random word for you
 2. Give a clue to help the AI guess the word
 3. The AI will try to guess based on your clue
 4. If the AI guesses correctly, you win!
 5. If not, you can give another clue
+6. If the AI guesses incorrectly after too many clues, you will get less points
 
 ## Development
 
