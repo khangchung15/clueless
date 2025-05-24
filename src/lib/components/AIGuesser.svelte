@@ -19,32 +19,45 @@
 
 <style>
   .ai-guesser {
-    padding: 1rem;
-    background-color: #f9fafb;
+    padding: 1.5rem;
+    background-color: #C2C1C2;
     border-radius: 8px;
+    border: 2px solid #683257;
+  }
+
+  h2 {
+    color: #42213D;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 
   .response {
     margin: 1rem 0;
     padding: 1rem;
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #42213D;
+    border-radius: 8px;
+    color: #C2C1C2;
+  }
+
+  .response p {
+    margin: 0;
   }
 
   .guesses {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
 
   .guess {
-    padding: 0.5rem;
-    background-color: #e5e7eb;
-    border-radius: 4px;
+    padding: 0.75rem;
+    background-color: #42213D;
+    border-radius: 8px;
+    border: 1px solid #683257;
   }
 
   .guess-text {
-    color: #1f2937;
+    color: #C2C1C2;
+    font-weight: 500;
   }
 </style> 
