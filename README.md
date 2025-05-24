@@ -9,7 +9,7 @@ A fun word guessing game where you provide clues to help an AI guess the word.
 npm install
 ```
 
-2. Start locally:
+2. Start the development servers:
 ```bash
 npm run dev:all
 ```
@@ -23,6 +23,10 @@ This will start both:
 The game is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
 Visit the deployed version at: https://khangchung15.github.io/clueless/
+
+### Deployment Status
+- Latest deployment: [View Status](https://github.com/khangchung15/clueless/actions)
+- If deployment is queued, please wait a few minutes for GitHub Actions to process
 
 ## Development vs Production
 
