@@ -19,10 +19,9 @@ This will start both:
 - Backend server (Node) on http://localhost:3000
 
 ## Deployment
-
 The game is automatically deployed to GitHub Pages when changes are pushed to the main branch.
-
 Visit the deployed version at: https://khangchung15.github.io/clueless/
+If the hosted website does not work, try running it locally
 
 ### Deployment Status
 - Latest deployment: [View Status](https://github.com/khangchung15/clueless/actions)
