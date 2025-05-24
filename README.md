@@ -1,6 +1,6 @@
 # Clueless - Word Guessing Game
 
-A fun word guessing game where you provide clues to help an AI guess the word.
+Help an AI guess the word given in the prompt from another AI
 
 ## Local Development
 
@@ -9,7 +9,7 @@ A fun word guessing game where you provide clues to help an AI guess the word.
 npm install
 ```
 
-2. Start the development servers:
+2. Start both servers:
 ```bash
 npm run dev:all
 ```
