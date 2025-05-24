@@ -30,12 +30,14 @@ If the hosted website does not work, try running it locally
 ## Development vs Production
 
 - Local development uses `npm run dev:all` which runs both frontend and backend servers
-- Production deployment only includes the frontend (static files)
-- The backend server needs to be hosted separately for production use
+- Production deployment uses a hosted backend service on Render.com
+- The frontend is deployed to GitHub Pages
 
 ## Technologies Used
 
 - Frontend: Svelte + Vite
-- Backend: Node.js
+- Backend: Node.js + Express
 - AI: Ollama with Mistral model
+- Hosting: GitHub Pages (frontend) + Render.com (backend)
+- CI/CD: GitHub Actions
 

@@ -1,9 +1,9 @@
-const API_URL = 'http://localhost:3000/api';
+import { API_BASE_URL } from '../config/api';
 
 // This will be implemented later with actual AI integration
 export async function generateWord(guessedWords: string[] = []): Promise<string> {
   try {
-    const response = await fetch(`${API_URL}/generate-word`, {
+    const response = await fetch(`${API_BASE_URL}/generate-word`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -25,7 +25,7 @@ export async function generateWord(guessedWords: string[] = []): Promise<string>
 
 export async function validateClue(clue: string, currentWord: string): Promise<{ isValid: boolean; message?: string }> {
   try {
-    const response = await fetch(`${API_URL}/validate-clue`, {
+    const response = await fetch(`${API_BASE_URL}/validate-clue`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ export async function validateClue(clue: string, currentWord: string): Promise<{
 
 export async function processClue(clue: string, previousClues: string[]): Promise<{ guess: string; response: string }> {
   try {
-    const response = await fetch(`${API_URL}/process-clue`, {
+    const response = await fetch(`${API_BASE_URL}/process-clue`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
